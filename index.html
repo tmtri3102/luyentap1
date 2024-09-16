@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Luyện tập cấu trúc điều kiện</title>
+	</head>
+	<body>
+		<!-- BAI 1 -->
+
+		<h1>Bai 1 - Nhap 2 so</h1>
+		<input
+			type="number"
+			name="a"
+			id="a"
+		/>
+		<input
+			type="number"
+			name="b"
+			id="b"
+		/><button onclick="chiahet()">Check</button>
+		<p id="result"></p>
+
+		<!-- BAI 2 -->
+
+		<h1>Bai 2 - Check tuoi hoc lop 10</h1>
+		<input
+			type="number"
+			name="tuoi"
+			id="tuoi"
+		/>
+		<button onclick="lop10()">Check</button>
+		<p id="result2"></p>
+
+		<!-- BAI 3 -->
+
+		<h1>Bai 3 - So sanh voi 0</h1>
+		<input
+			type="number"
+			name="so "
+			id="so"
+		/>
+		<button onclick="sosanh()">Check</button>
+		<p id="ketqua"></p>
+
+		<!-- BAI 4 -->
+
+		<h1>Bai 4 - So lon nhat</h1>
+		<input
+			type="number"
+			name="a3"
+			id="a3"
+		/>
+		<input
+			type="number"
+			name="b3"
+			id="b3"
+		/>
+		<input
+			type="number"
+			name="c3"
+			id="c3"
+		/>
+		<button onclick="maxNum()">Check</button>
+		<p id="result3"></p>
+
+		<!-- BAI 5 -->
+
+		<h1>Bai 5 -Xep hang hoc luc</h1>
+		<input
+			type="number"
+			name="test"
+			id="test"
+		/><input
+			type="number"
+			name="midterm"
+			id="midterm"
+		/><input
+			type="number"
+			name="final"
+			id="final"
+		/>
+		<p id="result4"></p>
+		<button onclick="tinhdiem()">Check</button>
+
+		<!-- BAI 6 -->
+
+		<h1>Bai 6 - Hoa hong</h1>
+		<input
+			type="number"
+			name="hoahong"
+			id="hoahong"
+			placeholder="Nhap so tien (nghin dong)"
+		/>
+		<button onclick="hoahong()">Check</button>
+		<p id="ketqua2"></p>
+
+		<!-- BAI 7 -->
+		<h1>Bai 7 - Cuoc dien thoai</h1>
+		<input
+			type="number"
+			id="minutes"
+			placeholder="Minutes used"
+		/>
+		<input
+			type="number"
+			id="baseFee"
+			placeholder="Base fee"
+		/>
+		<input
+			type="number"
+			id="perMinute"
+			placeholder="Fee per extra minute"
+		/>
+
+		<button onclick="calculateBill()">Calculate</button>
+		<p id="result7"></p>
+		<script src="main.js"></script>
+	</body>
+</html>
