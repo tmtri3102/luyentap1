@@ -11,7 +11,40 @@
 	<body>
 		<!-- BAI 1 -->
 
-		<h1>Bai 1 - Nhap 2 so</h1>
+		<h1>Bai 1 - C sang F</h1>
+		<input
+			type="number"
+			name="doC"
+			id="doC"
+		/>
+		<button onclick="converter()">Check</button>
+		<p id="result"></p>
+
+		<!-- BAI 2 -->
+
+		<h1>Bai 2 - m sang ft</h1>
+		<input
+			type="number"
+			name="met"
+			id="met"
+		/>
+		<button onclick="unitConverter()">Check</button>
+		<p id="result2"></p>
+
+		<!-- BAI 3 -->
+
+		<h1>Bai 3 - Dien tich hinh vuong</h1>
+		<input
+			type="number"
+			name="canh"
+			id="canh"
+		/>
+		<button onclick="dientich()">Check</button>
+		<p id="result3"></p>
+
+		<!-- BAI 4 -->
+
+		<h1>Bai 4 - Dien tich chu nhat</h1>
 		<input
 			type="number"
 			name="a"
@@ -21,40 +54,47 @@
 			type="number"
 			name="b"
 			id="b"
-		/><button onclick="chiahet()">Check</button>
-		<p id="result"></p>
+		/>
+		<button onclick="dientichChunhat()">Check</button>
+		<p id="result4"></p>
 
-		<!-- BAI 2 -->
+		<!-- BAI 5 -->
 
-		<h1>Bai 2 - Check tuoi hoc lop 10</h1>
+		<h1>Bai 5 Dien tich tam giac vuong</h1>
 		<input
 			type="number"
-			name="tuoi"
-			id="tuoi"
+			name="a1"
+			id="a1"
+		/><input
+			type="number"
+			name="b1"
+			id="b1"
 		/>
-		<button onclick="lop10()">Check</button>
-		<p id="result2"></p>
+		<p id="result5"></p>
+		<button onclick="tamgiacVuong()">Check</button>
 
-		<!-- BAI 3 -->
+		<!-- BAI 6 -->
 
-		<h1>Bai 3 - So sanh voi 0</h1>
+		<h1>Bai 6 - Giai phuong trinh bac 1</h1>
 		<input
 			type="number"
-			name="so "
-			id="so"
+			name="a2"
+			id="a2"
+		/><input
+			type="number"
+			name="b2"
+			id="b2"
 		/>
-		<button onclick="sosanh()">Check</button>
-		<p id="ketqua"></p>
+		<p id="result6"></p>
+		<button onclick="bac1()">Check</button>
 
-		<!-- BAI 4 -->
-
-		<h1>Bai 4 - So lon nhat</h1>
+		<!-- BAI 7 -->
+		<h1>Bai 7 - Giai phuong trinh bac 2</h1>
 		<input
 			type="number"
 			name="a3"
 			id="a3"
-		/>
-		<input
+		/><input
 			type="number"
 			name="b3"
 			id="b3"
@@ -64,60 +104,81 @@
 			name="c3"
 			id="c3"
 		/>
-		<button onclick="maxNum()">Check</button>
-		<p id="result3"></p>
-
-		<!-- BAI 5 -->
-
-		<h1>Bai 5 -Xep hang hoc luc</h1>
-		<input
-			type="number"
-			name="test"
-			id="test"
-		/><input
-			type="number"
-			name="midterm"
-			id="midterm"
-		/><input
-			type="number"
-			name="final"
-			id="final"
-		/>
-		<p id="result4"></p>
-		<button onclick="tinhdiem()">Check</button>
-
-		<!-- BAI 6 -->
-
-		<h1>Bai 6 - Hoa hong</h1>
-		<input
-			type="number"
-			name="hoahong"
-			id="hoahong"
-			placeholder="Nhap so tien (nghin dong)"
-		/>
-		<button onclick="hoahong()">Check</button>
-		<p id="ketqua2"></p>
-
-		<!-- BAI 7 -->
-		<h1>Bai 7 - Cuoc dien thoai</h1>
-		<input
-			type="number"
-			id="minutes"
-			placeholder="Minutes used"
-		/>
-		<input
-			type="number"
-			id="baseFee"
-			placeholder="Base fee"
-		/>
-		<input
-			type="number"
-			id="perMinute"
-			placeholder="Fee per extra minute"
-		/>
-
-		<button onclick="calculateBill()">Calculate</button>
 		<p id="result7"></p>
+		<button onclick="bac2()">Check</button>
+
+		<!-- BAI 8 -->
+		<h1>Bai 8 - La nguoi?</h1>
+		<input
+			type="number"
+			name="age"
+			id="age"
+		/>
+		<p id="result8"></p>
+		<button onclick="age()">Check</button>
+
+		<!-- BAI 9 -->
+		<h1>Bai 9 - Co phai la canh cua tam giac?</h1>
+		<input
+			type="number"
+			name="a4"
+			id="a4"
+		/>
+		<input
+			type="number"
+			name="b4"
+			id="b4"
+		/>
+		<input
+			type="number"
+			name="c4"
+			id="c4"
+		/>
+		<p id="result9"></p>
+		<button onclick="tamgiac()">Check</button>
+
+		<!-- BAI 10 -->
+		<h1>Bai 10 - Tinh gia dien</h1>
+		<input
+			type="number"
+			id="kWh"
+			placeholder="Số kWh"
+		/>
+		<button onclick="giaDien()">Tính</button>
+		<p id="result10"></p>
+
+		<!-- BAI 11 -->
+		<h1>Bai 11 - Thue thu nhap ca nhan</h1>
+		<input
+			type="number"
+			id="income"
+			placeholder="Nhập thu nhập chịu thuế (VND)"
+		/>
+		<button onclick="calculateTax()">Tính</button>
+		<p id="result11"></p>
+
+		<!-- BAI 12 -->
+		<h1>Bai 12 - Lai suat kep</h1>
+		<input
+			type="number"
+			id="principal"
+			placeholder="Nhập số tiền gốc (VNĐ)"
+			step="0.01"
+		/>
+		<input
+			type="number"
+			id="months"
+			placeholder="Nhập số tháng"
+			step="1"
+		/>
+		<input
+			type="number"
+			id="interestRate"
+			placeholder="Nhập lãi suất hàng tháng (%)"
+			step="0.01"
+		/>
+		<button onclick="calculateInterest()">Tính Lãi</button>
+		<p id="result12"></p>
 		<script src="main.js"></script>
 	</body>
 </html>
